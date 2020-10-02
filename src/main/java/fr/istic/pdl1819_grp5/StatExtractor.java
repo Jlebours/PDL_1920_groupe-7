@@ -50,7 +50,6 @@ public class StatExtractor {
                         comptother++;
                     }
 
-
                 }
             } catch (IOException e) {
                 e.printStackTrace();
