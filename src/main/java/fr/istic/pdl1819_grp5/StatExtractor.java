@@ -100,7 +100,7 @@ public class StatExtractor {
     }
    //pour chaque url connaitre le nombre de tableau extrait de part et d'autres et mettre dans un fichier csv
     public  FileMatrix statafterextracting(ArrayList<String> urls, ArrayList<Integer> extractedHTML, ArrayList<Integer> extractedWikitext, ArrayList<String> urlsWikitext) {
-        FileMatrix fm = new FileMatrix("C:\\Users\\emman\\IdeaProjects\\PDL_1920_groupe-7\\output\\statsExtractor.csv");
+        FileMatrix fm = new FileMatrix("output\\statsExtractor.csv");
         fm.setText("URL,Tables_extracted_with_Html,Tables_extracted_with_Wikitext" + "\n");
         ArrayList<Integer> result = new ArrayList<Integer>();
         int sommehtml = 0;
