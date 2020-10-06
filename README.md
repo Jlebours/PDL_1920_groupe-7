@@ -15,7 +15,7 @@ from version to version over time to make it more powerful and better than the o
 the current objective is to have a better extractor than the other versions.
 
 ## Getting Started
-clone https://github.com/manuc352/PDL_1920_groupe-7 for development and testing purposes
+clone https://github.com/jlebours/PDL_1920_groupe-7 for development and testing purposes
 
 ## Prerequisites
 #### For Users
