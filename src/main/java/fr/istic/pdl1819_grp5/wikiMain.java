@@ -46,7 +46,7 @@ public class wikiMain {
         Set<UrlMatrix> urlMatrixSet;
 
 
-        File urlsFile = new File("C:\\Users\\Johan\\IdeaProjects\\PDL_1920_groupe-7\\inputdata\\wikiurls.txt");
+        File urlsFile = new File("inputdata\\wikiurls.txt");
 
 
         if (!urlsFile.exists() && !urlsFile.isDirectory()) {
@@ -54,7 +54,7 @@ public class wikiMain {
             System.exit(0);
         }
 
-        File directory = new File("C:\\Users\\Johan\\IdeaProjects\\PDL_1920_groupe-7\\output");
+        File directory = new File("output");
 
 
         if (!directory.exists() || !directory.isDirectory()) {

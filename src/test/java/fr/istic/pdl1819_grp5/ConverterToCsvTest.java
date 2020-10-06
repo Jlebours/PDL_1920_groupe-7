@@ -568,14 +568,12 @@ class ConverterToCsvTest {
             assertTrue(firstelemnt.get(0).equals(secondelement.get(0)));
             assertTrue(firstelemnt.get(1).equals(secondelement.get(1)));
             assertTrue(firstelemnt.get(2).equals(secondelement.get(2)));
-
-
         }
 
     }
+
     @Test
     public void VeriteTerrain4() throws IOException {
-
 
         FileReader file1 = new FileReader("output\\html\\\\Comparison_between_Esperanto_and_Ido-3.csv");
         FileReader file2 = new FileReader("verite\\\\Comparison_between_Esperanto_and_Ido-3 test.csv");
