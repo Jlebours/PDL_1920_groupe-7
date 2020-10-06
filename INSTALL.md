@@ -10,8 +10,6 @@
 
 - Clone the project, URL=*https://github.com/manuc352/PDL_1920_groupe-7.git*;
 - Install __maven__;
-- In the class wikiMain, change the path at line 20 by your personal path to access your repertory inputdata;
-- Same thing for the path at line 28 with the repertory output
 
 ### Maven Installation 
 
