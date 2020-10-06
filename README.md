@@ -74,10 +74,16 @@ As we have already said it this project has been developed by those students
 * Anderson KONAN
 * Kiko DAGNOGO
 
-now it's our turn to improve their work 
+This team improved already their work :
 
 * Emmanuel CHAUVEL 
 * Narcisse KOUADIO
 * Oceane THELISMA
 * Noussi AMAL
 * Karima GRAMI
+
+Now we make a review of the project :
+* Johan LE BOURSICAUD
+* Léo VARIERAS
+* Rabeaa KESSAL
+* Karla ROSAS

@@ -455,11 +455,11 @@ class ConverterToCsvTest {
      * check if the set of html files is equal to the number of similar tables
      * check if the set of wiki files is equal to the number of similar tables
      */
+
     @Test
     public void wikitextcomparetoShtml() throws IOException {
         File repertoireHtml = new File("output\\html");
         File repertoireWikitext = new File("output\\wikitext");
-
 
         File[] filesHtml = repertoireHtml.listFiles();
         File[] filesWikitext = repertoireWikitext.listFiles();
