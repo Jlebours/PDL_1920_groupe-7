@@ -75,17 +75,6 @@ public class wikiMain {
         logger.log(Level.INFO, "entering of the function which find tables by criteria");
         logger.log(Level.INFO, "Loading..........");
 
-        // display urls if it's ok
-        /*
-        BufferedReader in = new BufferedReader(new FileReader("C:\\Users\\Johan\\IdeaProjects\\PDL_1920_groupe-7\\inputdata\\wikiurls.txt"));
-        String line;
-        while ((line = in.readLine()) != null)
-        {
-            System.out.println (line);
-        }
-        in.close();
-        */
-
         stat.statbeforeExtraction(urlsFile, wikitablestat);
 
         logger.log(Level.INFO, "end of searching table by criteria");
