@@ -11,8 +11,12 @@
 - Clone the project, URL=*https://github.com/manuc352/PDL_1920_groupe-7.git*;
 - Install __maven__;
 
-### Maven Installation 
+### Maven Installation
+Help for Windows
+- To have maven on your computer, download the archive on https://maven.apache.org/download.cgi
+- Then unarchive in your programs files of your system and follow this short tip to check if your environment variables have been configured : https://maven.apache.org/install.html#windows-tips
 
+If you want to create a new maven project :
 You have to install it with IntelliJ to give easier its using. Here is the approach with IntelliJ
 - In the Project tool window, right-click the project folder and select New | Module. Alternatively, from the main menu, select File| New | Module to open the New Module wizard.
 - If you used main menu to add a module then the process of adding a module is the same as Creating a new Maven project. 
