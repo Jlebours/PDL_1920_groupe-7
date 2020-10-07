@@ -545,10 +545,7 @@ class ConverterToCsvTest {
             assertTrue(firstelemnt.get(2).equals(secondelement.get(2)));
             assertTrue(firstelemnt.get(3).equals(secondelement.get(3)));
             assertTrue(firstelemnt.get(5).equals(secondelement.get(5)));
-
         }
-
-
     }
 
     @Test

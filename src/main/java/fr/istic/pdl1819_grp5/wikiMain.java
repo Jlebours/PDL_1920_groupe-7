@@ -34,8 +34,6 @@ public class wikiMain {
         } catch (IOException e) {
             logger.log(Level.INFO, "logger did not load");
         }
-
-
     }
 
     public  void extracteurenmarche() throws  IOException{
