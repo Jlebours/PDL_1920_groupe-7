@@ -456,6 +456,7 @@ class ConverterToCsvTest {
      * check if the set of wiki files is equal to the number of similar tables
      */
 
+
     @Test
     public void wikitextcomparetoShtml() throws IOException {
         File repertoireHtml = new File("output\\html");
@@ -496,6 +497,59 @@ class ConverterToCsvTest {
         //  assertEquals(filesHtml, filesWikitext, "We check if the set of html files is equal to the set of wiki files");
         assertEquals(filesHtml.length, nbretabwikihtmlsimilaires, "We check if the set of html files is equal to the number of similar tables");
         assertEquals(filesWikitext.length, nbretabwikihtmlsimilaires, "We check if the set of wiki files is equal to the number of similar tables");
+    }
+
+
+    /**
+     * @return If the content of the files output/html and output/wikitext are the same or not it first comapre the length of the files and then the content. I did it two part first hard way (all charactersà and
+     * second way ithout space and coma.
+     * @throws IOException
+     */
+    private static boolean wikiTextCompareToHtml2() throws IOException {
+        File repertoireHtml = new File("output\\html");
+        File repertoireWikitext = new File("output\\wikitext");
+        File[] filesHtml = repertoireHtml.listFiles();
+        File[] filesWikitext = repertoireWikitext.listFiles();
+
+
+        if(filesHtml.length != filesWikitext.length){
+            return false;
+        }
+
+        for(int i=0; i<filesHtml.length ; i++){
+            String htmlContent = FileUtils.readFileToString(filesHtml[i]);
+            String wikitextContent = FileUtils.readFileToString(filesWikitext[i]);
+            htmlContent = htmlContent.replaceAll("\\s", "");
+            wikitextContent = wikitextContent.replaceAll("\\s", "");
+            htmlContent = htmlContent.replaceAll(",", "");
+            wikitextContent = wikitextContent.replaceAll(",","");
+            if(!(htmlContent.equals(wikitextContent))) {
+                System.out.println("Je ne suis pas égal avec les String");
+                return false;
+            }
+            else {
+                System.out.println("Je suis égal avec les String");
+            }
+            if(!(FileUtils.contentEquals(filesHtml[i],filesWikitext[i]))){
+                System.out.println("Je ne suis pas égal avec les files");
+                return false;
+            }
+            else {
+                System.out.println("Je suis égal avec les files");
+            }
+
+        }
+        return true;
+    }
+
+
+    /**
+     * Le test est a faux car les contenu des fichiers ne sont pas les mêmes
+     * @throws IOException
+     */
+    @Test
+    public static void wikiTextCompareToHtmlTest() throws IOException {
+        assertEquals(false,wikiTextCompareToHtml2());
     }
 
     /**
@@ -643,9 +697,4 @@ class ConverterToCsvTest {
         fileMatrix = c4.convertHtmlTable(table);
         assertTrue(FileUtils.contentEquals(new File("src/test/thead_tfoot/csv.csv"), fileMatrix.saveCsv("src/test/thead_tfoot/" + fileMatrix.getName() + ".csv")));
     }
-
-
-
-
-
 }
