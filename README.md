@@ -17,7 +17,7 @@ The current objective is to have a better extractor than the other versions.
 clone https://github.com/jlebours/PDL_1920_groupe-7 for development and testing purposes
 
 ## Prerequisites
-#### For Users
+### For Users
 * JRE >= 1.8
 * java IDE  (Eclispe,Intelliji Idea etc..)
 * [Maven](https://maven.apache.org/) - Dependency Management to get all dependencies of this project.
