@@ -6,18 +6,18 @@ import java.io.File;
 import java.io.IOException;
 
 public class TestMain {
-    private static boolean wikiTextCompareToHtml2() throws IOException {
-        File repertoireHtml = new File("output\\html");
-        File repertoireWikitext = new File("output\\wikitext");
-        File[] filesHtml = repertoireHtml.listFiles();
-        File[] filesWikitext = repertoireWikitext.listFiles();
+    private static boolean wikiTextCompareToHtmlAux(File file1, File file2) throws IOException {
+        File fileHtml = new File("output\\html");
+        File fileWiki = new File("output\\wikitext");
+        //File[] filesHtml = repertoireHtml.listFiles();
+        //File[] filesWikitext = repertoireWikitext.listFiles();
 
 
-        if(filesHtml.length != filesWikitext.length){
-            //return false;
+        if(!(FileUtils.contentEquals(fileHtml,fileWiki))){
+            return false;
         }
 
-        for(int i=0; i<filesHtml.length ; i++){
+        //for(int i=0; i<filesHtml.length ; i++){
 
             /*
             String htmlContent = FileUtils.readFileToString(filesHtml[i]);
@@ -41,10 +41,6 @@ public class TestMain {
             }
             else {
                 System.out.println("Je suis égal avec les files");
-
-                //test push
-                //test push2
-                //test push 3 ???
             }
 
         }
