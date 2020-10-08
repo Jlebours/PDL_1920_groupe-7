@@ -54,6 +54,10 @@ You will find more informations to increase your comprehension of the project wh
 * statistics on extracted files and tables not taken into account according to the selection criteria of the tables to be extracted
 * automatic testing of file extraction quality , these tests will show also the  weaknesses of the extractor.
 
+#### Functions that our group is suppose to work on  
+* Improve the JUnit test (10 fails on 14)
+* Improve the extractor pour make it more stable  
+
 ## Deployment
 run mvn package builds the project and packages the resulting JAR file into the target directory.
 
