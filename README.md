@@ -56,7 +56,10 @@ you will find more informations to increase your comprehension of the project wh
 * automatic testing of file extraction quality , these tests will show also the  weaknesses of the extractor.
 
 ## Deployment
-run mvn package this Build the project to generate the artefac.
+run mvn package builds the project and packages the resulting JAR file into the target directory.
+
+## Test
+run mvn test to run unit test in Maven.
 
 ## Versioning
 For the versions available, see the [tags on this repository](https://github.com/manuc352/PDL_1920_groupe-7/releases). 
