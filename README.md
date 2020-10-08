@@ -1,18 +1,13 @@
-# Wikipedia Matrix The Truth
+# Wikipedia Matrix
 
-Wikipedia Matrix THE TRUTH is a table extractor via two ways : HTML and WIKITEXT.
-the purpose of this project is to improve the first version of the project which has 
-been done by the students of Master degree from last year.
-It's goal is to extract as many relevant tables from wikipedia links.
-the output format is csv.
-After analysis of the program we have listed the following problems:
-* difference between the results of the extraction methods 
-Indeed, html extraction provides more tables than wikitext extraction.
-* criteria for selecting relevant tables not refined
+Wikipedia Matrix is a table extractor by two means : HTML and WIKITEXT.
+The aim of this project is to take up the first two versions of the project that have been made in the last two years in order to make a global review. 
 
-Like any project we have several differents version and the purpose of this it's to improve it, 
-from version to version over time to make it more powerful and better than the others versions,
-the current objective is to have a better extractor than the other versions.
+The aim of the project was to extract as many relevant tables as possible from wikipedia links, the output format being csv.
+We must now analyse the quality of the two data extractors HTML and WIKITEXT in order to draw conclusions and propose areas for improvement while correcting any problems that arise. 
+* The evaluation report is available in this file EVALUATION.md.
+
+Like any project, we have several different versions and the aim is to improve it, from version to version over time to make it more powerful and better than the other versions. The current objective is to have a better extractor than the other versions.
 
 ## Getting Started
 clone https://github.com/jlebours/PDL_1920_groupe-7 for development and testing purposes
@@ -24,7 +19,7 @@ clone https://github.com/jlebours/PDL_1920_groupe-7 for development and testing 
 * [Maven](https://maven.apache.org/) - Dependency Management to get all dependencies of this project.
 * for installing and testing we are inviting you to click on, this below link
 [Install.md](https://github.com/manuc352/PDL_1920_groupe-7/blob/master/INSTALL.md)
-* you will see A step by step series of examples that tell you how to install  and test this,after that
+* you will see A step by step series of examples that tell you how to install and test this, after that
 you can run the project for testing and extracting csv files from wikipedia pages which are 
 available in the directory inputdat--> wikiurls.txt.
 
