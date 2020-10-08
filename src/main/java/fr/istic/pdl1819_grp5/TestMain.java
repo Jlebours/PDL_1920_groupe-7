@@ -13,10 +13,20 @@ public class TestMain {
         //File[] filesWikitext = repertoireWikitext.listFiles();
 
 
-        if(!(FileUtils.contentEquals(fileHtml,fileWiki))){
+        if (!(FileUtils.contentEquals(fileHtml, fileWiki))) {
             return false;
+        } else {
+            return true;
         }
+    }
 
+    private static int rateOfSuccess () throws IOException {
+        File fileHtml = new File("output\\html");
+        File fileWiki = new File("output\\wikitext");
+        File[] filesHtml = fileHtml.listFiles();
+        File[] filesWikitext = fileWiki.listFiles();
+        return 1;
+    }
         //for(int i=0; i<filesHtml.length ; i++){
 
             /*
