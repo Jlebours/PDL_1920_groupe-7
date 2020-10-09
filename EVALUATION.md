@@ -25,5 +25,37 @@ and we get, as for the mvn test, 10 tests that do not work so 4 that work on the
 We have observed that during a new extraction, all the files are generated again, and are never identical to the previous generation.
 This falsifies the majority of tests, especially the tests of VéritéTerrain which compares a stable csv file in the verite directory,
 to a new csv each time an extraction is made, which will always generate errors.
-- Solution in this issue : 
+- Solution in this issue : https://github.com/Jlebours/PDL_1920_groupe-7/issues/8
+
+## Extractor defaults
+
+- The HTML extractor generates more csv than the WIKITEXT extractor. 
+- Special characters are not displayed in the same way inside tables.
+- Tables are not generated in the same order in the HTML and WIKITEXT directories, for example : 
+ html/Comparison_between_Esperanto_and_Ido-0 corresponds to wikitext/Comparison_between_Esperanto_and_Ido-2.
+
+## Extractor success rate
+
+We have developed an algorithm to check the success rate of the extractor between html and wikitext.
+As we know that the csv are not extracted in the same order then the success rate would be close to 0 
+if we compare them in the order generated in the output directory.
+
+The algorithm then follows the following procedure:
+1. For each csv file in the output/html directory, it looks for a csv with the same name in the output/wikitext directory.
+2. We check that the container of each csv is the same for all the given file names. 
+3. If everything is valid for the same csv name in both directories then we can say that the case is a success.
+
+We obtain a success rate of 337 out of 1627 csv extracts (20.5%).
+- File corresponding to the test: https://github.com/Jlebours/PDL_1920_groupe-7/blob/master/src/main/java/fr/istic/pdl1819_grp5/TestMain.java
+- See the result at the end of the issue: https://github.com/Jlebours/PDL_1920_groupe-7/issues/3
+
+## Improvement path 
+
+It is necessary to improve the stability of the extractor, unfortunately we have not been able to find the source. 
+
+
+
+ 
+
+
 
