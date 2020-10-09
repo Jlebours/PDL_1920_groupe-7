@@ -51,6 +51,7 @@ We obtain a success rate of 337 out of 1627 csv extracts (20.5%).
 
 ## Improvement path 
 
+A good extraction order of the tables could be a solution, which would also make unit tests more reliable. 
 It is necessary to improve the stability of the extractor, unfortunately we have not been able to find the source. 
 
 
