@@ -20,39 +20,20 @@ public class TestMain {
         File fileWiki = new File("output\\wikitext");
         File[] filesHtml = fileHtml.listFiles();
         File[] filesWikitext = fileWiki.listFiles();
+        for(int i=0; i<filesHtml.length; i++){
+            for(int j=0; j<filesWikitext.length; j++) {
 
+                if(rateOfSuccessAux(filesHtml[i],filesWikitext[j])) {
+                    successCount++;
+                }
+            }
+        }
         return successCount;
     }
-        //for(int i=0; i<filesHtml.length ; i++){
 
-            /*
-            String htmlContent = FileUtils.readFileToString(filesHtml[i]);
-            String wikitextContent = FileUtils.readFileToString(filesWikitext[i]);
-            htmlContent = htmlContent.replaceAll("\\s", "");
-            wikitextContent = wikitextContent.replaceAll("\\s", "");
-            htmlContent = htmlContent.replaceAll(",", "");
-            wikitextContent = wikitextContent.replaceAll(",","");
-            if(!(htmlContent.equals(wikitextContent))) {
-                System.out.println("Je ne suis pas égal avec les String");
-                return false;
-            }
-            else {
-                System.out.println("Je suis égal avec les String");
-            }
 
-             */
-            if(!(FileUtils.contentEquals(filesHtml[i],filesWikitext[i]))){
-                System.out.println("Je ne suis pas égal avec les files");
-                return false;
-            }
-            else {
-                System.out.println("Je suis égal avec les files");
-            }
-
-        }
-        return true;
-    }
     public static void main(String[] args) throws IOException {
-        System.out.println(wikiTextCompareToHtml2());
+        System.out.println(rateOfSuccess());
+
     }
 }
