@@ -6,14 +6,8 @@ import java.io.File;
 import java.io.IOException;
 
 public class TestMain {
-    private static boolean wikiTextCompareToHtmlAux(File file1, File file2) throws IOException {
-        File fileHtml = new File("output\\html");
-        File fileWiki = new File("output\\wikitext");
-        //File[] filesHtml = repertoireHtml.listFiles();
-        //File[] filesWikitext = repertoireWikitext.listFiles();
-
-
-        if (!(FileUtils.contentEquals(fileHtml, fileWiki))) {
+    private static boolean rateOfSuccessAux(File fileHTML, File fileWiki) throws IOException {
+        if (!(FileUtils.contentEquals(fileHTML, fileWiki))) {
             return false;
         } else {
             return true;
@@ -21,11 +15,13 @@ public class TestMain {
     }
 
     private static int rateOfSuccess () throws IOException {
+        int successCount = 0;
         File fileHtml = new File("output\\html");
         File fileWiki = new File("output\\wikitext");
         File[] filesHtml = fileHtml.listFiles();
         File[] filesWikitext = fileWiki.listFiles();
-        return 1;
+
+        return successCount;
     }
         //for(int i=0; i<filesHtml.length ; i++){
 
