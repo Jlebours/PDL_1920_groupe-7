@@ -14,6 +14,7 @@ l'installation de maven sur les ordinateurs personnels.
 Lors du run mvn test, le build se déroule correctement, nous obtenons 10 tests qui ne fonctionnent pas ainsi 4 qui fonctionnent sur les 14 cas de test.
 Le test de l'extractor génère 3 bugs en lisant les urls, causé par les caractères spéciaux.
 - Solution dans cette issue : https://github.com/Jlebours/PDL_1920_groupe-7/issues/5
+
 L'extracteur HTML génère 1621 fichiers et l'extracteur WIKITEXT génère 1547 fichiers.
 Le test de l'extracteur peut être généré par cette commande : mvn -Dtest=ConverterToCsvTest#extractor test
 
