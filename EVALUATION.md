@@ -4,10 +4,9 @@
 
 Nous avons eu un problème de compréhension au niveau de l'installation de maven dans le projet, 
 nous avons créé un nouveau projet maven à l'interieur du projet initial, car nous avions suivi la procédure de création 
-de projet maven dans le install.md. 
-
-Nous avons alors affiné cette partie et ajouté une autre partie afin d'expliquer 
+de projet maven dans le install.md. Nous avons alors affiné cette partie et ajouté une autre partie afin d'expliquer 
 l'installation de maven sur les ordinateurs personnels. 
+
 - Commit : https://github.com/Jlebours/PDL_1920_groupe-7/commit/90c560e47ceb18d7cda056772c74f504b3b8414f
 
 ## Maven test
