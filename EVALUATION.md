@@ -52,7 +52,8 @@ We obtain a success rate of 337 out of 1627 csv extracts (20.5%).
 ## Improvement path 
 
 A good extraction order of the tables could be a solution, which would also make unit tests more reliable. 
-It is necessary to improve the stability of the extractor, unfortunately we have not been able to find the source. 
+It is necessary to improve the stability of the extractor, unfortunately we have not been able to find the source.
+We can improve the extractor by making the html and wikitext at the same time and using a buffer that contains all URL and a syncronized that will make the extraction at the same time. Unfortunaly we didn't had the time to do it and it would have been very hard.
 
 
 
