@@ -5,7 +5,7 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
 
-public class TestMain {
+public class SuccesRate {
     private static boolean rateOfSuccessAux(File fileHTML, File fileWiki) throws IOException {
        // if (!(FileUtils.contentEquals(fileHTML, fileWiki))) {
         String htmlContent = FileUtils.readFileToString(fileHTML);

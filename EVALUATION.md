@@ -46,7 +46,7 @@ The algorithm then follows the following procedure:
 3. If everything is valid for the same csv name in both directories then we can say that the case is a success.
 
 We obtain a success rate of 337 out of 1627 csv extracts (20.5%).
-- File corresponding to the test: https://github.com/Jlebours/PDL_1920_groupe-7/blob/master/src/main/java/fr/istic/pdl1819_grp5/TestMain.java
+- File corresponding to the test: https://github.com/Jlebours/PDL_1920_groupe-7/blob/master/src/main/java/fr/istic/pdl1819_grp5/SuccesRate.java
 - See the result at the end of the issue: https://github.com/Jlebours/PDL_1920_groupe-7/issues/3
 
 ## Improvement path 
