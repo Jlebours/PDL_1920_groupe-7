@@ -7,7 +7,14 @@ import java.io.IOException;
 
 public class TestMain {
     private static boolean rateOfSuccessAux(File fileHTML, File fileWiki) throws IOException {
-        if (!(FileUtils.contentEquals(fileHTML, fileWiki))) {
+       // if (!(FileUtils.contentEquals(fileHTML, fileWiki))) {
+        String htmlContent = FileUtils.readFileToString(fileHTML);
+        String wikitextContent = FileUtils.readFileToString(fileWiki);
+        htmlContent = htmlContent.replaceAll("\\s", "");
+        wikitextContent = wikitextContent.replaceAll("\\s", "");
+        htmlContent = htmlContent.replaceAll(",", "");
+        wikitextContent = wikitextContent.replaceAll(",","");
+        if(!(htmlContent.equals(wikitextContent))) {
             return false;
         } else {
             return true;
