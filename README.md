@@ -56,7 +56,7 @@ You will find more informations to increase your comprehension of the project wh
 
 #### Functions that our group is suppose to work on  
 * Improve the JUnit test (10 fails on 14)
-* Improve the extractor pour make it more stable  
+* Improve the extractor to make it more reliable  
 
 ## Deployment
 run mvn package builds the project and packages the resulting JAR file into the target directory.
